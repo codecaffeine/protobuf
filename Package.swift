@@ -21,7 +21,8 @@ let package = Package(
             ],
             publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("objectivec")
+                .headerSearchPath("objectivec"),
+                .unsafeFlags(["-fno-objc-arc"])
             ]),
 //        .testTarget(
 //            name: "GoogleProtobufTests",
